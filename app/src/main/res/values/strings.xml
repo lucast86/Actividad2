@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Actividad2</string>
+    <string name="btnSuma">SUMAR</string>
+    <string name="editnumero">Ingrese un Valor</string>
+    <string name="btnresta">RESTA</string>
+    <string name="btnzoom1">ZOOM+</string>
+    <string name="btnzoom2">ZOOM-</string>
+    <string name="btnocultar">OCULTAR</string>
+    <string name="btnreset">RESET</string>
+    <string name="txtconversor">Conversor Monedas</string>
+    <string name="editmonto">Ingrese Monto en Pesos</string>
+    <string name="textmoneda">Seleccione una Moneda</string>
+    <string name="rdbDolar">DOLAR(USA)</string>
+    <string name="rdbEuro">EURO</string>
+    <string name="rdbReal">REAL(RRASIL)</string>
+    <string name="editResultado">Resultado</string>
+    <string name="btnConvertir">CONVERTIR</string>
+    <string name="btnReiniciar">REINICIAR</string>
+</resources>

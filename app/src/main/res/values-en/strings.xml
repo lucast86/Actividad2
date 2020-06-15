@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Exercise2"</string>
+    <string name="btnSuma">ADD</string>
+    <string name="editnumero">Enter a Value</string>
+    <string name="btnresta">SUBTRACTION</string>
+    <string name="btnzoom1">ZOOM+</string>
+    <string name="btnzoom2">ZOOM-</string>
+    <string name="btnocultar">HIDE</string>
+    <string name="btnreset">RESET</string>
+    <string name="txtconversor">"Currency Converter "</string>
+    <string name="editmonto">Enter Amount in Pesos</string>
+    <string name="textmoneda">" Select a Currency"</string>
+    <string name="rdbDolar">" DOLLAR (USA)"</string>
+    <string name="rdbEuro">EURO</string>
+    <string name="rdbReal">REAL(RRASIL)</string>
+    <string name="editResultado">Outcome</string>
+    <string name="btnConvertir">" TURN INTO"</string>
+    <string name="btnReiniciar">RESTART</string>
+</resources>
