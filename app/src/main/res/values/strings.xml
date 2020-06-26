@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Actividad2</string>
+    <string name="app_name"></string>
     <string name="btnSuma">SUMAR</string>
     <string name="editnumero">Ingrese un Valor</string>
     <string name="btnresta">RESTA</string>

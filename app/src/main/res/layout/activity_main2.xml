@@ -67,64 +67,78 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editmonto" />
 
-    <RadioButton
-        android:id="@+id/rdbDolar"
-        android:layout_width="129dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="210dp"
-        android:text="@string/rdbDolar"
-        android:textColor="@color/colorBotones"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textmoneda" />
-
-    <RadioButton
-        android:id="@+id/rdbEuro"
-        android:layout_width="125dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="210dp"
-        android:text="@string/rdbEuro"
-        android:textColor="@color/colorBotones"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdbDolar" />
-
-    <RadioButton
-        android:id="@+id/rdbReal"
-        android:layout_width="wrap_content"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="210dp"
-        android:text="@string/rdbReal"
-        android:textColor="@color/colorBotones"
-        android:textStyle="bold|italic"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/editResultado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdbEuro" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdbDolar"
+            android:layout_width="129dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="210dp"
+            android:checked="true"
+            android:text="@string/rdbDolar"
+            android:textColor="@color/colorBotones"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textmoneda" />
+
+        <RadioButton
+            android:id="@+id/rdbEuro"
+            android:layout_width="125dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="210dp"
+            android:text="@string/rdbEuro"
+            android:textColor="@color/colorBotones"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rdbDolar" />
+
+        <RadioButton
+            android:id="@+id/rdbReal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="210dp"
+            android:text="@string/rdbReal"
+            android:textColor="@color/colorBotones"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rdbEuro" />
+
+
+    </RadioGroup>
 
     <EditText
         android:id="@+id/editResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
+        android:layout_marginBottom="108dp"
         android:backgroundTint="@color/colorLetra1"
         android:ems="10"
         android:hint="@string/editResultado"
         android:inputType="number"
         android:textColor="@color/colorLetra1"
         android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdbReal" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnConvertir"

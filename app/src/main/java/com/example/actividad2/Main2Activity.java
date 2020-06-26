@@ -57,16 +57,16 @@ public class Main2Activity extends AppCompatActivity {
         int cotizacion = 0;                                           // leo que que hay en editmonto
                                                                       //comprobamos que checked esta seleccionado
         if(rdbDolar.isChecked()){                                     //y * el monto con la cotizacion
-            cotizacion = 100;
+            cotizacion = 73;
         }
         if(rdbEuro.isChecked()){
-            cotizacion = 82;
+            cotizacion = 81;
         }
         if(rdbReal.isChecked()){
-            cotizacion = 35;
+            cotizacion = 1450;
         }
 
-        editResultado.setText( String.valueOf(monto * cotizacion)); // String.valueOf(monto * cotizacion)
+        editResultado.setText( String.valueOf(monto / cotizacion)); // String.valueOf(monto * cotizacion)
                                                                     // convertimos un int en String
     }
 }
