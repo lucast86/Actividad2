@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">Exercice2</string>
     <string name="btnSuma">" AJOUTER"</string>
-    <string name="editnumero">" Entrez une valeur"</string>
     <string name="btnresta">" SOUSTRACTION"</string>
     <string name="btnzoom1">ZOOM+</string>
     <string name="btnzoom2">ZOOM-</string>
@@ -17,4 +16,5 @@
     <string name="editResultado">Résultat</string>
     <string name="btnConvertir">" CHANGER EN"</string>
     <string name="btnReiniciar">REDÉMARRER</string>
+    <string name="txtCero">0</string>
 </resources>

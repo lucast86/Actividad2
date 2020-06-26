@@ -19,31 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imgandroid" />
 
-    <EditText
-        android:id="@+id/editnumero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="56dp"
-        android:backgroundTint="@color/colorLetra1"
-        android:ems="10"
-        android:hint="@string/editnumero"
-        android:inputType="number"
-        android:textColor="@color/colorLetra1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="33dp"
         android:backgroundTint="@color/colorBotones"
         android:text="@string/btnSuma"
         android:textColor="@color/colorLetra1"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/editnumero" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/btnzoom1"
@@ -76,12 +62,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="33dp"
         android:backgroundTint="@color/colorBotones"
         android:text="@string/btnresta"
         android:textColor="@color/colorLetra1"
         app:layout_constraintStart_toEndOf="@+id/btnSuma"
-        app:layout_constraintTop_toBottomOf="@+id/editnumero" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/btnzoom2"
@@ -106,5 +92,17 @@
         android:textColor="@color/colorLetra1"
         app:layout_constraintStart_toEndOf="@+id/btnocultar"
         app:layout_constraintTop_toBottomOf="@+id/btnzoom2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="131dp"
+        android:text="@string/txtCero"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

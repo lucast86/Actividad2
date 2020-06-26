@@ -19,31 +19,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imgandroid" />
 
-    <EditText
-        android:id="@+id/editnumero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="85dp"
-        android:backgroundTint="@color/colorLetra1"
-        android:ems="10"
-        android:hint="@string/editnumero"
-        android:inputType="number"
-        android:shadowColor="@color/colorBotones"
-        android:textColor="@color/colorLetra1"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <Button
         android:id="@+id/btnSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="46dp"
         android:layout_marginEnd="25dp"
         android:backgroundTint="@color/colorBotones"
         android:text="@string/btnSuma"
@@ -51,7 +32,7 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toStartOf="@+id/btnresta"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editnumero" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCero" />
 
     <Button
         android:id="@+id/btnzoom1"
@@ -88,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="46dp"
         android:layout_marginEnd="100dp"
         android:backgroundTint="@color/colorBotones"
         android:text="@string/btnresta"
@@ -96,7 +77,7 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSuma"
-        app:layout_constraintTop_toBottomOf="@+id/editnumero" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCero" />
 
     <Button
         android:id="@+id/btnzoom2"
@@ -127,5 +108,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnocultar"
         app:layout_constraintTop_toBottomOf="@+id/btnzoom2" />
+
+    <TextView
+        android:id="@+id/txtCero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="177dp"
+        android:text="@string/txtCero"
+        android:textColor="@color/colorLetra1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
