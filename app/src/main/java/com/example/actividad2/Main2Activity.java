@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -31,16 +32,29 @@ public class Main2Activity extends AppCompatActivity {
         btnReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                limpiarControles();
+
+                    limpiarControles();
             }
         });
 
         btnConvertir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                convertirMoneda();
+
+                if(!validar()){
+                    convertirMoneda();
+                }
+                else{
+                    Toast.makeText(Main2Activity.this, "Cargar monto", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+    }
+
+    private boolean validar(){
+
+        return editmonto.getText().toString().trim().isEmpty();
+
     }
 
     private void limpiarControles(){
@@ -53,7 +67,8 @@ public class Main2Activity extends AppCompatActivity {
 
 
     private void convertirMoneda(){
-        int monto = Integer.parseInt(editmonto.getText().toString()); //Integer.parseInt (convierto en int)
+         int monto = Integer.parseInt(editmonto.getText().toString());
+                                                                      //Integer.parseInt (convierto en int)
         int cotizacion = 0;                                           // leo que que hay en editmonto
                                                                       //comprobamos que checked esta seleccionado
         if(rdbDolar.isChecked()){                                     //y * el monto con la cotizacion
